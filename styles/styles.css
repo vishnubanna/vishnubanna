@@ -143,6 +143,11 @@ body {
   .sidebar {
     float: none;
     visibility: hidden;
+    width: 0px;
+  }
+
+  .content {
+    margin-left: 20px;
   }
 }
 
