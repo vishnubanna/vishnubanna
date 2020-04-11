@@ -15,8 +15,8 @@ $( document ).ready(function() {
         //var ec = $("#EC").offset().top;
         var skills = $("#skills").offset().top;
 
-        console.log(window.screenX)
-        if (window.screenX > 900){
+        console.log(window.screen.width)
+        //if (window.screenX > 900){
             if ((1 - (3 * curr/y)) > 0.75){
                 $(".sidebar").css({
                     "background-color": "rgba(0, 0, 0," + (1 - (3 * curr/y)) + ")",
@@ -69,7 +69,7 @@ $( document ).ready(function() {
 
             }
         // if(parseInt($(".sidebar").css("width")) > 200){
-        }
+        //}
 
         // }
         if ((1 - (30 * curr/y)) > -1){
