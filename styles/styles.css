@@ -1,0 +1,148 @@
+body {
+  background-color: black;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.sidebar {
+  background-color: black;
+  width: 250px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: table;
+}
+
+.cont {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.imgs {
+  position: relative;
+  z-index: 10;
+}
+
+.links {
+  font-family: "Saira", sans-serif;
+  margin-top: 10px;
+  position: relative;
+  z-index: 10;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: 0.2s;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.links a:hover {
+  font-size: large;
+  font-weight: 700;
+}
+
+.imgs img {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  align-self: center;
+  width: 230px;
+  max-width: 230px;
+  border-radius: 50%;
+  border: solid;
+}
+
+.content {
+  font-family: "Saira", sans-serif;
+}
+
+.active {
+  transform: scale(1.4);
+}
+
+.name {
+  font-family: "Saira", sans-serif;
+  text-align: left;
+  height: 100%;
+  margin-bottom: 0px;
+  display: table;
+  z-index: 9;
+}
+
+#title {
+  color: white;
+  font-size: 86;
+  font-weight: 200;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  min-height: 70px;
+}
+
+#email {
+  text-decoration: none;
+  color: white;
+}
+
+#phone {
+  color: white;
+}
+
+#linker {
+  padding-left: 30px;
+}
+
+.items {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.snamfil {
+  padding-left: 20px;
+}
+
+.project {
+  border: none;
+  background-color: #e6e4e4;
+  border-radius: 10%;
+  min-width: 100px;
+  min-height: 50px;
+  font-family: "Saira", sans-serif;
+  transition: 0.3s;
+  font-size: 20;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.project:hover {
+  background-color: #c5c5c5;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 400px) {
+  .sidebar {
+    position: fixed;
+    float: left;
+    height: 100%;
+    z-index: 10;
+    width: 250px;
+  }
+
+  .content {
+    float: none;
+    margin-left: 270px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .sidebar {
+    float: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
