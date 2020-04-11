@@ -4,7 +4,7 @@ let hmax = 732;
 $( document ).ready(function() {
     $(window).scroll(function(){
         var curr = window.pageYOffset;
-        var winh = window.screenY;
+        var winw = window.screenX;
         var y = $("#bottom").offset().top;//window.innerHeight;
         console.log(curr, y)
 
@@ -15,59 +15,61 @@ $( document ).ready(function() {
         //var ec = $("#EC").offset().top;
         var skills = $("#skills").offset().top;
 
-        if ((1 - (3 * curr/y)) > 0.75){
-            $(".sidebar").css({
-                "background-color": "rgba(0, 0, 0," + (1 - (3 * curr/y)) + ")",
-                //"background-color": "rgba(0, 0,"+ (290 * curr/y) + "," + (1 - (3 * curr/y)) + ")",
-            })
+        console.log(window.screenX)
+        if (window.screenX > 900){
+            if ((1 - (3 * curr/y)) > 0.75){
+                $(".sidebar").css({
+                    "background-color": "rgba(0, 0, 0," + (1 - (3 * curr/y)) + ")",
+                    //"background-color": "rgba(0, 0,"+ (290 * curr/y) + "," + (1 - (3 * curr/y)) + ")",
+                })
 
-            $(".imgs").css({
-                "transform": "scale("+(1 - (2 * curr/y))+")",
-            })
+                $(".imgs").css({
+                    "transform": "scale("+(1 - (2 * curr/y))+")",
+                })
 
-            $(".sidebar").css({
-                "width": ""+ 250 - 170 * curr/y +"px",
-            })
+                $(".sidebar").css({
+                    "width": ""+ 250 - 170 * curr/y +"px",
+                })
 
-            $(".content").css({
-                "margin-left": ""+ 270 - 170 * curr/y +"px",
-            })
+                $(".content").css({
+                    "margin-left": ""+ 270 - 170 * curr/y +"px",
+                })
 
-            // $(".sidebar").css({
-            //     "width": ""+ 300 - 250 * curr/y +"px",
-            // })
+                // $(".sidebar").css({
+                //     "width": ""+ 300 - 250 * curr/y +"px",
+                // })
 
-            // $(".content").css({
-            //     "margin-left": ""+ 320 - 270 * curr/y +"px",
-            // })
-            $(".name").css({
-                "padding-top": ""+((2 * hmax * curr)/y)+"px",
-                "margin-bottom": ""-((9 * hmax * curr)/y)+"px",
-            })
+                // $(".content").css({
+                //     "margin-left": ""+ 320 - 270 * curr/y +"px",
+                // })
+                $(".name").css({
+                    "padding-top": ""+((2 * hmax * curr)/y)+"px",
+                    "margin-bottom": ""-((9 * hmax * curr)/y)+"px",
+                })
 
-            pass = 0;
-        }
-        else if (pass == 1 || curr >= edu){
-            $(".sidebar").css({
-                "background-color": "rgba(0, 0, 0, 0.75)",
-                //"background-color": "rgba(0, 256, 0, 0.75)",
-            })
+                pass = 0;
+            }
+            else if (pass == 1 || curr >= edu){
+                $(".sidebar").css({
+                    "background-color": "rgba(0, 0, 0, 0.75)",
+                    //"background-color": "rgba(0, 256, 0, 0.75)",
+                })
 
-            $(".imgs").css({
-                "transform": "scale(0.83333333333)",
-            })
+                $(".imgs").css({
+                    "transform": "scale(0.83333333333)",
+                })
 
-            $(".sidebar").css({
-                "width": "200px",
-            })
+                $(".sidebar").css({
+                    "width": "200px",
+                })
 
-            $("body").css({
-                "background-color": "rgba(0, 0, 0, 0)",
-            })
+                $("body").css({
+                    "background-color": "rgba(0, 0, 0, 0)",
+                })
 
-        }
+            }
         // if(parseInt($(".sidebar").css("width")) > 200){
-        
+        }
 
         // }
         if ((1 - (30 * curr/y)) > -1){

@@ -104,6 +104,7 @@ body {
 
 #phone{
     color: white;
+    text-decoration: none;
 }
 
 #linker{
@@ -139,7 +140,7 @@ body {
 }
 
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 900px){
 
     .sidebar{
         position: fixed;
@@ -155,15 +156,23 @@ body {
     }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 900px){
     .sidebar{
         float: none;
         visibility: hidden;
         width: 0px;
+        height: 0%;
     }
 
     .content{
         margin-left: 20px;
+        width: 100%;
+        min-height: 700px;
+        margin-top: -200px;
+    }
+
+    .items{
+        vertical-align: top;
     }
 }
 
