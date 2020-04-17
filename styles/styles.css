@@ -222,6 +222,10 @@ div.module.parallax-5 {
     vertical-align: top;
   }
 
+  .contexts {
+    overflow: scroll;
+  }
+
   div.module.parallax {
     background-size: cover, contain;
   }
