@@ -83,8 +83,8 @@ $( document ).ready(function() {
         // if(parseInt($(".sidebar").css("width")) > 200){
         //}
             $("div.module.parallax").css({
-                "background-position": "50% " + (50 + curr/10) + "%",
-                //"background-size": (100 + (curr/y) * 10) + "%" + (100 + (curr/y) * 10) + "%",
+                //"background-position": "50% " + (50 + curr/10) + "%",
+                "background-size": (100 + (curr/y) * 10) + "%" + (100 + (curr/y) * 10) + "%",
             })
 
             // }
