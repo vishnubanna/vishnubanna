@@ -2,6 +2,7 @@ body {
   background-color: black;
   margin-left: 0;
   margin-top: 0;
+  overflow-x: hidden;
 }
 
 .sidebar {
@@ -61,10 +62,16 @@ body {
 
 .content {
   font-family: "Saira", sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .active {
   transform: scale(1.4);
+}
+
+.namecont {
+  padding-left: 270px;
 }
 
 .name {
@@ -126,6 +133,65 @@ body {
   cursor: pointer;
 }
 
+.education {
+  background-image: url("file:///Users/vishnubanna/CodingProjects/vishnubanna.github.io/src/purdue.jpeg");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.contexts {
+  margin-top: 25%;
+  background-color: white;
+  padding-left: 270px;
+  margin-right: -100px;
+  width: 100%;
+  min-height: 50%;
+}
+
+div.module.parallax {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+div.module.parallax-1 {
+  background-image: url("src/purdue2.jpeg");
+}
+
+div.module.parallax-2 {
+  background-image: url("src/city.jpeg");
+}
+
+div.module.parallax-3 {
+  background-image: url("src/exp.jpeg");
+}
+
+div.module.parallax-4 {
+  background-image: url("src/mountain3.jpeg");
+}
+
+div.module.parallax-5 {
+  background-image: url("src/city3.jpeg");
+}
+
+.experience {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  overflow-x: hidden;
+  background-attachment: scroll;
+}
+
 @media screen and (min-width: 900px) {
   .sidebar {
     position: fixed;
@@ -137,7 +203,6 @@ body {
 
   .content {
     float: none;
-    margin-left: 270px;
   }
 }
 @media screen and (max-width: 900px) {

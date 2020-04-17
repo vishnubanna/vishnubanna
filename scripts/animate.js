@@ -31,8 +31,14 @@ $( document ).ready(function() {
                     "width": ""+ 250 - 170 * curr/y +"px",
                 })
 
-                $(".content").css({
-                    "margin-left": ""+ 270 - 170 * curr/y +"px",
+                // $(".content").css({
+                //     "padding-left": ""+ 270 - 170 * curr/y +"px",
+                // })
+                $(".namecont").css({
+                    "padding-left": ""+ 270 - 170 * curr/y +"px",
+                })
+                $(".contexts").css({
+                    "padding-left": ""+ 270 - 170 * curr/y +"px",
                 })
 
                 // $(".sidebar").css({
@@ -41,7 +47,7 @@ $( document ).ready(function() {
 
                 // $(".content").css({
                 //     "margin-left": ""+ 320 - 270 * curr/y +"px",
-                // })
+                //})
                 $(".name").css({
                     "padding-top": ""+((2 * hmax * curr)/y)+"px",
                     "margin-bottom": ""-((9 * hmax * curr)/y)+"px",
@@ -63,23 +69,54 @@ $( document ).ready(function() {
                     "width": "200px",
                 })
 
-                $("body").css({
-                    "background-color": "rgba(0, 0, 0, 0)",
-                })
+                // $("body").css({
+                //     "background-color": "rgba(0, 0, 0, 0)",
+                // })
+                // $(".namecont").css({
+                //     "padding-left": "270px",
+                // })
+                // $(".contexts").css({
+                //     "padding-left": "270px",
+                // })
 
             }
         // if(parseInt($(".sidebar").css("width")) > 200){
         //}
+        $("div.module.parallax").css({
+            //"background-position": "50% " + (50 + curr/50) + "%",
+            "background-size": (100 + (curr/y) * 10) + "%" + (100 + (curr/y) * 10) + "%",
+        })
 
         // }
         if ((1 - (30 * curr/y)) > -1){
             // $(".name").css({
             //     "background-color": "rgba(0, 0, 0," + (1 - (50 * curr/y)) + ")",
             // })
-            $("body").css({
-                "background-color": "rgba(0, 0, 0," + (1 - (16 * curr/y)) + ")",
-            });
+            // $("body").css({
+            //     "background-color": "rgba(0, 0, 0," + (1 - (16 * curr/y)) + ")",
+            // });
 
+            $("#title").css({
+                "color": "rgba(256, 256, 256," + (1 - (16 * curr/y)) + ")",
+            })
+            $("#phone").css({
+                "color": "rgba(256, 256, 256," + (1 - (16 * curr/y)) + ")",
+            })
+            $("#email").css({
+                "color": "rgba(256, 256, 256," + (1 - (16 * curr/y)) + ")",
+            })
+            $("#git").css({
+                "color": "rgba(256, 256, 256," + (1 - (16 * curr/y)) + ")",
+            })
+            $("#link").css({
+                "color": "rgba(256, 256, 256," + (1 - (16 * curr/y)) + ")",
+            })
+            $("#sound").css({
+                "color": "rgba(256, 256, 256," + (1 - (16 * curr/y)) + ")",
+            })
+            $("#mail").css({
+                "color": "rgba(256, 256, 256," + (1 - (16 * curr/y)) + ")",
+            })
         }
 
         // var name = $("#name").offset().top;

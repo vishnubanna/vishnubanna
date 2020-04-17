@@ -6,9 +6,12 @@
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/all.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="scripts/animate.js"></script>
-    <script src="https://use.fontawesome.com/8f3bf95ad7.js"></script>
+    <script src="scripts/all.min.js"></script>
+
     <title>Vishnu Banna</title>
 </head>
 <body>
@@ -16,7 +19,7 @@
     <div class="sidebar" id="bar">
         <div class="cont">
             <div class = "imgs">
-                <img src="src/headshot.jpeg" alt="" >
+                <img src="src/headshot.jpeg" alt="" href="#name">
             </div>
             <div class = "links">
                 <a class = "active" id = "l1" href="#name">links</a>
@@ -32,122 +35,134 @@
 
     <!-- The content -->
     <div class="content">
-        <div class = "name" id = "name">
-            <div class="items">
-                <h1 id="title"> Vishnu Banna</h1>
-
-                <div id="linker">
-                    <a id="email" href="mailto:vbanna@purdue.edu" target="_blank">vbanna@purdue.edu</a>
-                    <p id="phone">(408) 375-0798</p>
-                    <a href="https://github.com/vishnubanna" target="_blank"><i class="fa fa-github-alt" aria-hidden="true" style="color:white;font-size:40px;"></i></a>
-                    <!-- <i class="fa fa-linkedin-square" aria-hidden="true" style="color:white;font-size:40px;padding-left:10px;"></i> -->
-                    <a href ="https://www.linkedin.com/in/vishnubanna/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"  style="color:white;font-size:40px;padding-left:10px;"></i></a>
-                    <!-- <a href ="src/Resume.pdf" target="_blank" class = "pdfres"><i class="fa fa-file-pdf-o" aria-hidden="true" style="color:white;font-size:40px;padding-left:10px;"></i></a> -->
-                    <a href ="https://soundcloud.com/vishnu-banna-705811954" target="_blank" class = "pdfres"><i class="fa fa-soundcloud" aria-hidden="true" style="color:white;font-size:40px;padding-left:10px;"></i></a>
-                    <a href ="mailto:vbanna@purdue.edu" target="_blank"><i class="fa fa-envelope" aria-hidden="true"  style="color:white;font-size:40px;padding-left:10px;"></i></a>
-                    <!-- <span class="pdftxt">Tooltip text</span> -->
+        <div class = "namecont" id = "namecont">
+            <div class = "name" id = "name">
+                <div class="items">
+                    <h1 id="title"> Vishnu Banna</h1>
+                    <div id="linker">
+                        <a id="email" href="mailto:vbanna@purdue.edu" target="_blank">vbanna@purdue.edu</a>
+                        <p id="phone">(408) 375-0798</p>
+                        <a href="https://github.com/vishnubanna" target="_blank"><i class="fab fa-github-alt" id="git" style="color:white;font-size:40px;"></i></a>
+                        <!-- <i class="fa fa-linkedin-square" aria-hidden="true" style="color:white;font-size:40px;padding-left:10px;"></i> -->
+                        <a href ="https://www.linkedin.com/in/vishnubanna/" target="_blank"><i class="fab fa-linkedin-in" id="link" style="color:white;font-size:40px;padding-left:10px;"></i></a>
+                        <!-- <a href ="src/Resume.pdf" target="_blank" class = "pdfres"><i class="fa fa-file-pdf-o" aria-hidden="true" style="color:white;font-size:40px;padding-left:10px;"></i></a> -->
+                        <a href ="https://soundcloud.com/vishnu-banna-705811954" target="_blank" class = "pdfres"><i class="fab fa-soundcloud" id="sound" style="color:white;font-size:40px;padding-left:10px;"></i></a>
+                        <a href ="mailto:vbanna@purdue.edu" target="_blank"><i class="fas fa-envelope" id="mail" style="color:white;font-size:40px;padding-left:10px;"></i></a>
+                        <!-- <span class="pdftxt">Tooltip text</span> -->
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class = "module parallax parallax-1" id="education">
+            <!-- <div class = "edu-wid"> <img src="src/purdue.jpeg" alt=""></div> -->
+            <div class = "contexts">
+                <div class = "edu">
+                    <h2 class="subname" >Education</h2>
+                    <div class="snamfil">
+                        <h3 class="elemttl">Purdue Univeristy</h3>
+                        <p>August 2018 - December 2021</p>
+                        <i class="fas fa-circle-o" aria-hidden="true" style="color:black;font-size:10px;padding-left:10px;"></i>
+                    </div>  
+                    <br>
                 </div>
             </div>
         </div>
-        <br>
-        <h2 class="subname", id="education">Education</h2>
-            <div class="snamfil">
-                <h3 class="elemttl">Purdue Univeristy</h3>
-                <p>August 2018 - December 2021</p>
-                <i class="fa fa-circle-o" aria-hidden="true" style="color:black;font-size:10px;padding-left:10px;"></i>
-            </div>  
-        <br>
-        <h2 class="subname", id="experience">Experience</h2>
-            <div class="snamfil">
-                <h3 class="elemttl">Engineering Intern :: Dialog Semiconductors</h3>
-                <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-                <i class="fa fa-circle-o" aria-hidden="true" style="color:black;font-size:10px;padding-left:10px;"></i>
-            </div>  
-        <br>
-        <h2 class="subname", id="PP">Personal Projects</h2>
-            <div class="snamfil">
-                <button class = "project"> MRI Cleaner </button>
-                <button class = "project"> Compression </button>
-                <button class = "project"> Stock Analysis CLI </button>
-                <button class = "project"> Learning ML </button>
-            </div>  
-        <br>
-        <h2 class="subname", id="EC">Extra Curriculars</h2>
-            <div class="snamfil">
-                <h3 class="elemttl">Music Production</h3>
-                <i class="fa fa-circle-o" aria-hidden="true" style="color:black;font-size:10px;padding-left:10px;"></i>
-                <h3 class="elemttl">Photography</h3>
-                <i class="fa fa-circle-o" aria-hidden="true" style="color:black;font-size:10px;padding-left:10px;"></i>
-                <h3 class="elemttl">Music Performance</h3>
-                <i class="fa fa-circle-o" aria-hidden="true" style="color:black;font-size:10px;padding-left:10px;"></i>
-            </div>  
-
-        <h2 class="subname", id="skills">Skills</h2>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>        
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>        
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-        <p>July 2019 - August 2019 & December 2019 - January 2020</p>
+        <div class = "module parallax parallax-2" id="experience">
+            <div class = "contexts">
+                <div class = "exp">
+                    <h2 class="subname">Experience</h2>
+                        <div class="snamfil">
+                            <h3 class="elemttl">Engineering Intern :: Dialog Semiconductors</h3>
+                            <p>July 2019 - August 2019 & December 2019 - January 2020</p>
+                            <i class="fas fa-circle-o" aria-hidden="true" style="color:black;font-size:10px;padding-left:10px;"></i>
+                        </div>  
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class = "module parallax parallax-3" id="PP">
+            <div class = "contexts">
+                <div class = "PP">
+                    <h2 class="subname" >Personal Projects</h2>
+                        <div class="snamfil">
+                            <button class = "project"> MRI Cleaner </button>
+                            <button class = "project"> Compression </button>
+                            <button class = "project"> Stock Analysis CLI </button>
+                            <button class = "project"> Learning ML </button>
+                        </div>  
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class = "module parallax parallax-4" id="EC">
+            <div class = "contexts">
+                <div class = "EC">
+                    <h2 class="subname" >About</h2>
+                    <div class="snamfil">
+                        <h3 class="elemttl">Music Production</h3>
+                        <i class="fas fa-circle-o" aria-hidden="true" style="color:black;font-size:10px;padding-left:10px;"></i>
+                        <h3 class="elemttl">Photography</h3>
+                        <i class="fas fa-circle-o" aria-hidden="true" style="color:black;font-size:10px;padding-left:10px;"></i>
+                        <h3 class="elemttl">Music Performance</h3>
+                        <i class="fas fa-circle-o" style="color:black;font-size:10px;padding-left:10px;"></i>
+                    </div> 
+                </div> 
+            </div>
+        </div>
+        <div class = "module parallax parallax-5" id="skills">
+            <div class = "contexts">
+                <div class = "skills">
+                    <h2 class="subname">Skills</h2>
+                    <div class="snamfil">   
+                        <div class="pc">
+                            <h3> Programming Languages: </h3>
+                            <div class = "icons">
+                                <i class="far fa-check-square" style="color:black;font-size:20px;padding-left:10px;"></i><i class="fab fa-python" style="color:black;font-size:40px;padding-left:10px;vertical-align:middle;" ></i> Python
+                                <i class="far fa-check-square" style="color:black;font-size:20px;padding-left:10px;"></i><i class="fab fa-html5" style="color:black;font-size:40px;padding-left:10px;vertical-align:middle;" ></i> HTML
+                                <i class="far fa-check-square" style="color:black;font-size:20px;padding-left:10px;"></i><i class="fab fa-css3-alt" style="color:black;font-size:40px;padding-left:10px;vertical-align:middle;"></i> CSS
+                                <i class="far fa-check-square" style="color:black;font-size:20px;padding-left:10px;"></i><i class="fab fa-js-square" style="color:black;font-size:40px;padding-left:10px;vertical-align:middle;"></i> JavaScript
+                                <i class="far fa-check-square" style="color:black;font-size:20px;padding-left:10px;"></i><i class="devicon-c-plain" style="color:black;font-size:40px;padding-left:10px;vertical-align:middle;"></i> C
+                                <i class="far fa-check-square" style="color:black;font-size:20px;padding-left:10px;"></i><i class="devicon-cplusplus-plain-wordmark" style="color:black;font-size:40px;padding-left:10px;vertical-align:middle;"></i> C++
+                                <i class="far fa-square" style="color:black;font-size:20px;padding-left:10px;"></i><i class="fab fa-java" style="color:black;font-size:40px;padding-left:10px;vertical-align:middle;"></i> Java
+                                <i class="far fa-check-square" style="color:black;font-size:20px;padding-left:10px;"></i><i class="devicon-swift-plain" style="color:black;font-size:40px;padding-left:10px;vertical-align:middle;"></i> Swift
+                            </div>
+                        </div>   
+                        <div class="pc">
+                            <h3> Technologies: </h3>
+                            <div class = "icons">
+                                <i class="far fa-check-square" style="color:black;font-size:20px;padding-left:10px;"></i> Firebase DB
+                                <i class="far fa-check-square" style="color:black;font-size:20px;padding-left:10px;"></i> Angular 8
+                                <i class="far fa-check-square" style="color:black;font-size:20px;padding-left:10px;"></i> TensorFlow 2.x
+                                <i class="far fa-check-square" style="color:black;font-size:20px;padding-left:10px;"></i> Numpy
+                                <i class="far fa-check-square" style="color:black;font-size:20px;padding-left:10px;"></i> Pandas
+                                <i class="far fa-check-square" style="color:black;font-size:20px;padding-left:10px;"></i> MatPlotlib
+                                <i class="far fa-check-square" style="color:black;font-size:20px;padding-left:10px;"></i> Flask
+                                <i class="far fa-check-square" style="color:black;font-size:20px;padding-left:10px;"></i> RegEx
+                            </div>
+                        </div>  
+                        <div class="ds">
+                            <h3> Develpment Skills and Platforms: </h3>
+                            <div class = "icons">
+                                <i class="far fa-check-square" style="color:black;font-size:20px;padding-left:10px;"></i> Neural Network Design
+                                <i class="far fa-check-square" style="color:black;font-size:20px;padding-left:10px;"></i> REST API Development
+                                <i class="far fa-check-square" style="color:black;font-size:20px;padding-left:10px;"></i> Embedding Programming 
+                                <i class="far fa-check-square" style="color:black;font-size:20px;padding-left:10px;"></i> Circuit Design
+                                <i class="far fa-check-square" style="color:black;font-size:20px;padding-left:10px;"></i> Data Analysis
+                                <i class="far fa-check-square" style="color:black;font-size:20px;padding-left:10px;"></i> Data Visualization
+                                <br>
+                                <i class="far fa-check-square" style="color:black;font-size:20px;padding-left:10px;"></i> Library Programming
+                                <i class="far fa-check-square" style="color:black;font-size:20px;padding-left:10px;"></i> Linux
+                                <i class="far fa-check-square" style="color:black;font-size:20px;padding-left:10px;"></i> MacOS
+                            </div>
+                        </div>  
+                    </div>   
+                </div>
+            </div>
+        </div>
+        <!-- <div class = "module parallax parallax-5" id="skills"> -->
         <h2 id = "bottom"></h2>
+        <!-- </div> -->
     </div>
 </body>
 </html>
