@@ -246,13 +246,14 @@ $(document).ready(function(){
   
       // Make sure this.hash has a value before overriding default behavior
       if (this.hash !== "") {
+        console.log(this.hash)
         // Prevent default anchor click behavior
             var curr = window.pageYOffset;
             var edu = $("#education").offset().top;
 
             if (curr > edu - 30){
                 event.preventDefault();
-        
+                console.log()
                 // Store hash
                 var hash = this.hash;
         
