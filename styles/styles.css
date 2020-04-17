@@ -1,4 +1,4 @@
-body {
+body, #html {
   background-color: black;
   margin-left: 0;
   margin-top: 0;
@@ -68,10 +68,6 @@ body {
 
 .active {
   transform: scale(1.4);
-}
-
-.namecont {
-  padding-left: 270px;
 }
 
 .name {
@@ -145,15 +141,6 @@ body {
   overflow-y: hidden;
 }
 
-.contexts {
-  margin-top: 25%;
-  background-color: white;
-  padding-left: 270px;
-  margin-right: -100px;
-  width: 100%;
-  min-height: 50%;
-}
-
 div.module.parallax {
   height: 100%;
   width: 100%;
@@ -161,7 +148,6 @@ div.module.parallax {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
 }
 
 div.module.parallax-1 {
@@ -184,15 +170,14 @@ div.module.parallax-5 {
   background-image: url("https://vishnubanna.github.io/src/city3.jpeg");
 }
 
-.experience {
-  height: 100%;
+.contexts {
+  margin-top: 25%;
+  background-color: white;
   width: 100%;
-  background-size: cover;
-  overflow-x: hidden;
-  background-attachment: scroll;
+  min-height: 50%;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
   .sidebar {
     position: fixed;
     float: left;
@@ -201,11 +186,24 @@ div.module.parallax-5 {
     width: 250px;
   }
 
+  .namecont {
+    padding-left: 270px;
+  }
+
+  div.module.parallax {
+    background-size: 100% 100%;
+  }
+
+  .contexts {
+    padding-left: 270px;
+    margin-right: -100px;
+  }
+
   .content {
     float: none;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   .sidebar {
     float: none;
     visibility: hidden;
@@ -222,6 +220,10 @@ div.module.parallax-5 {
 
   .items {
     vertical-align: top;
+  }
+
+  div.module.parallax {
+    background-size: cover, contain;
   }
 }
 

@@ -15,8 +15,8 @@ $( document ).ready(function() {
         //var ec = $("#EC").offset().top;
         var skills = $("#skills").offset().top;
 
-        console.log(window.screen.width)
-        //if (window.screenX > 900){
+        //console.log(window.screen.width)
+        if (window.innerWidth > 700){
             if ((1 - (3 * curr/y)) > 0.75){
                 $(".sidebar").css({
                     "background-color": "rgba(0, 0, 0," + (1 - (3 * curr/y)) + ")",
@@ -82,20 +82,57 @@ $( document ).ready(function() {
             }
         // if(parseInt($(".sidebar").css("width")) > 200){
         //}
-        $("div.module.parallax").css({
-            //"background-position": "50% " + (50 + curr/50) + "%",
-            "background-size": (100 + (curr/y) * 10) + "%" + (100 + (curr/y) * 10) + "%",
-        })
+            $("div.module.parallax").css({
+                //"background-position": "50% " + (50 + curr/50) + "%",
+                "background-size": (100 + (curr/y) * 10) + "%" + (100 + (curr/y) * 10) + "%",
+            })
 
-        // }
-        if ((1 - (30 * curr/y)) > -1){
-            // $(".name").css({
-            //     "background-color": "rgba(0, 0, 0," + (1 - (50 * curr/y)) + ")",
-            // })
-            // $("body").css({
-            //     "background-color": "rgba(0, 0, 0," + (1 - (16 * curr/y)) + ")",
-            // });
+            // }
+            if ((1 - (30 * curr/y)) > -1){
+                // $(".name").css({
+                //     "background-color": "rgba(0, 0, 0," + (1 - (50 * curr/y)) + ")",
+                // })
+                // $("body").css({
+                //     "background-color": "rgba(0, 0, 0," + (1 - (16 * curr/y)) + ")",
+                // });
 
+                $("#title").css({
+                    "color": "rgba(256, 256, 256," + (1 - (16 * curr/y)) + ")",
+                })
+                $("#phone").css({
+                    "color": "rgba(256, 256, 256," + (1 - (16 * curr/y)) + ")",
+                })
+                $("#email").css({
+                    "color": "rgba(256, 256, 256," + (1 - (16 * curr/y)) + ")",
+                })
+                $("#git").css({
+                    "color": "rgba(256, 256, 256," + (1 - (16 * curr/y)) + ")",
+                })
+                $("#link").css({
+                    "color": "rgba(256, 256, 256," + (1 - (16 * curr/y)) + ")",
+                })
+                $("#sound").css({
+                    "color": "rgba(256, 256, 256," + (1 - (16 * curr/y)) + ")",
+                })
+                $("#mail").css({
+                    "color": "rgba(256, 256, 256," + (1 - (16 * curr/y)) + ")",
+                })
+            }
+
+            var preq = 30; 
+            if (curr - prevcurr > 0){
+                pass = pass;
+            }
+            else{
+                pass = 1;
+            }
+        }else{
+            $(".namecont").css({
+                "padding-left": "0px",
+            })
+            $(".contexts").css({
+                "padding-left": "0px",
+            })
             $("#title").css({
                 "color": "rgba(256, 256, 256," + (1 - (16 * curr/y)) + ")",
             })
@@ -119,22 +156,6 @@ $( document ).ready(function() {
             })
         }
 
-        // var name = $("#name").offset().top;
-        // var edu = $("#name").offset().bottom;
-        // console.log(edu);
-        // var experince = $("#experience").offset().top;
-        // var pp = $("#PP").offset().top;
-        // var ec = $("#EC").offset().top;
-        // var skills = $("#skills").offset().top;
-
-        var preq = 30; 
-        if (curr - prevcurr > 0){
-            pass = pass;
-        }
-        else{
-            pass = 1;
-        }
-
         if (curr >= name && curr < edu - preq){
             $('#l1').addClass("active");
             $('#l2').removeClass("active");
@@ -148,8 +169,6 @@ $( document ).ready(function() {
             $('#l1').removeClass("active"); 
         }
         
-
-
         if (curr >= edu - preq && curr < experince - preq){
             $('#l1').removeClass("active");
             $('#l2').addClass("active");
@@ -241,7 +260,7 @@ $(document).ready(function(){
                 // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                 $('html, body').animate({
                 scrollTop: $(hash).offset().top
-                }, 500, function(){
+                }, 1000, function(){
         
                 // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;

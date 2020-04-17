@@ -1,13 +1,13 @@
 $barwid: 250px;
 //$barwid: 300px;
 
-html {
-    //scroll-behavior: smooth;
-    //overflow-x: hidden;
+// html {
+//     //scroll-behavior: smooth;
+//     //overflow-x: hidden;
     
-}
+// }
 
-body {
+body, #html {
     background-color: rgba(0, 0, 0, 1);
     margin-left: 0;
     margin-top: 0;
@@ -82,9 +82,7 @@ body {
     //background-color: blue($color: #0026ff);
 }
 
-.namecont{
-    padding-left: $barwid + 20px;;
-}
+
 
 .name {
     font-family: 'Saira', sans-serif;
@@ -162,15 +160,7 @@ body {
     overflow-y: hidden;
 }
 
-.contexts{
-    margin-top: 25%;
-    background-color: white;
-    padding-left: $barwid + 20px;
-    margin-right: -100px;
-    width: 100%;
-    min-height: 50%;
-    //z-index: 100;
-}
+
 
 div.module.parallax{
     height: 100%;
@@ -182,7 +172,7 @@ div.module.parallax{
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;//cover, contain;
+    //background-size: 100% 100%;//cover, contain;
 }
 
 
@@ -208,19 +198,6 @@ div.module.parallax-5{
 }
 //file:///Users/vishnubanna/CodingProjects/vishnubanna.github.io/
 
-
-.experience{
-    
-    height: 100%;
-    //file:///Users/vishnubanna/CodingProjects/vishnubanna.github.io/src/purdue.jpeg
-    width: 100%;
-    //background-repeat: no-repeat;
-    background-size: cover;
-    overflow-x: hidden;
-    background-attachment: scroll;
-    //overflow-y: hidden;
-}
-
 // .expcont{
 //     margin-top: 25%;
 //     background-color: white;
@@ -229,9 +206,16 @@ div.module.parallax-5{
 //     width: 100%;
 // }
 
+.contexts{
+    margin-top: 25%;
+    background-color: white;
+    width: 100%;
+    min-height: 50%;
+    //z-index: 100;
+}
 
-@media screen and (min-width: 900px){
-
+@media screen and (min-width: 700px){
+    
     .sidebar{
         position: fixed;
         float: left;
@@ -240,6 +224,18 @@ div.module.parallax-5{
         width: $barwid;
     }
 
+    .namecont{
+        padding-left: $barwid + 20px;;
+    }
+
+    div.module.parallax{
+        background-size: 100% 100%;
+    }
+
+    .contexts{
+        padding-left: $barwid + 20px;
+        margin-right: -100px;
+    }
 
     .content{
         float: none;
@@ -247,7 +243,7 @@ div.module.parallax-5{
     }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 700px){
     .sidebar{
         float: none;
         visibility: hidden;
@@ -264,6 +260,10 @@ div.module.parallax-5{
 
     .items{
         vertical-align: top;
+    }
+
+    div.module.parallax{
+        background-size: cover, contain;
     }
 }
 
