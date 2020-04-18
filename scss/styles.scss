@@ -355,6 +355,10 @@ section.module.parallax-5{
         //display: table-cell;
         //color: white;
     }
+    .items{
+        display: table-cell;
+        vertical-align: middle;
+    }
 }
 
 @media screen and (max-width: 900px){
@@ -381,7 +385,12 @@ section.module.parallax-5{
     }
 
     div.module.parallax{
-        background-size: cover, contain;
+        background-size: contain;
+    }
+    .items{
+        display: table-cell;
+        vertical-align: top;
+        padding-top: -500px;
     }
 }
 
