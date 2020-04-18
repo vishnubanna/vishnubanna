@@ -211,8 +211,8 @@ section.module.parallax-5{
     background-color: rgba(256,256,256,1);
     //background-color: rgba(0,0,0,0.75);
     width: 100%;
-    min-height: 60%;
-    padding-bottom: 10px;
+    min-height: 50%;
+    padding-bottom: 30px;
     padding-top: 10px;
     text-align: center;
     //display: table;
@@ -390,7 +390,7 @@ section.module.parallax-5{
     .items{
         display: table-cell;
         vertical-align: top;
-        padding-top: -500px;
+        //padding-top: -500px;
     }
 }
 
