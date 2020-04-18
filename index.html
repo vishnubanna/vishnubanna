@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,11 +24,13 @@
             </div>
             <div class = "links">
                 <a class = "active" id = "l1" href="#name">links</a>
+                <a id = "l5" href="#EC">About</a>
                 <a id = "l2" href="#education">Education</a>
                 <a id = "l3" href="#experience">Experience</a>
                 <a id = "l4" href="#PP">Personal Projects</a>
-                <!-- <a id = "l5" href="#EC">Extra Curriculars</a> -->
                 <a id = "l6" href="#skills">Skills</a>
+                <a id = "l7"></a>
+                <a></a>
                 <a href ="src/Resume.pdf" target="_blank" class = "pdfres">Resume</a>
             </div>
         </div>
@@ -35,7 +38,7 @@
 
     <!-- The content -->
     <div class="content">
-        <div class = "namecont" id = "namecont">
+        <section class = "namecont" id = "namecont">
             <div class = "name" id = "name">
                 <div class="items">
                     <h1 id="title"> Vishnu Banna</h1>
@@ -53,49 +56,8 @@
                 </div>
             </div>
             <br>
-        </div>
-        <div class = "module parallax parallax-1" id="education">
-            <!-- <div class = "edu-wid"> <img src="src/purdue.jpeg" alt=""></div> -->
-            <div class = "contexts">
-                <div class = "edu">
-                    <h2 class="subname" >Education</h2>
-                    <div class="snamfil">
-                        <h3 class="elemttl">Purdue Univeristy</h3>
-                        <p>August 2018 - December 2021</p>
-                        <i class="fas fa-circle-o" aria-hidden="true" style="color:black;font-size:10px;padding-left:10px;"></i>
-                    </div>  
-                    <br>
-                </div>
-            </div>
-        </div>
-        <div class = "module parallax parallax-2" id="experience">
-            <div class = "contexts">
-                <div class = "exp">
-                    <h2 class="subname">Experience</h2>
-                        <div class="snamfil">
-                            <h3 class="elemttl">Engineering Intern :: Dialog Semiconductors</h3>
-                            <p>July 2019 - August 2019 & December 2019 - January 2020</p>
-                            <!-- <i class="fas fa-circle-o" aria-hidden="true" style="color:black;font-size:10px;padding-left:10px;"></i> -->
-                        </div>  
-                    <br>
-                </div>
-            </div>
-        </div>
-        <div class = "module parallax parallax-3" id="PP">
-            <div class = "contexts">
-                <div class = "PP">
-                    <h2 class="subname" >Personal Projects</h2>
-                        <div class="snamfil">
-                            <button class = "project"> MRI Cleaner </button>
-                            <button class = "project"> Compression </button>
-                            <button class = "project"> Stock Analysis CLI </button>
-                            <button class = "project"> Learning ML </button>
-                        </div>  
-                    <br>
-                </div>
-            </div>
-        </div>
-        <div class = "module parallax parallax-4" id="EC">
+        </section>
+        <section class = "module parallax parallax-4" id="EC">
             <div class = "contexts">
                 <div class = "EC">
                     <h2 class="subname" >About</h2>
@@ -109,8 +71,51 @@
                     </div> 
                 </div> 
             </div>
-        </div>
-        <div class = "module parallax parallax-5" id="skills">
+        </section>
+        <section class = "module parallax parallax-1" id="education">
+            <!-- <div class = "edu-wid"> <img src="src/purdue.jpeg" alt=""></div> -->
+            <div class = "contexts">
+                <div class = "edu">
+                    <h2 class="subname" >Education</h2>
+                    <div class="snamfil">
+                        <h3 class="elemttl">Purdue Univeristy</h3>
+                        <p>August 2018 - December 2021</p>
+                        <h3 class="elemttl">Course Work</h3>
+                        <p>Data Structures, Data Science, Signals and Systems, Embedded Programming, Machine Learning Research</p>
+                    </div>  
+                    <br>
+                </div>
+            </div>
+        </section>
+        <section class = "module parallax parallax-2" id="experience">
+            <div class = "contexts">
+                <div class = "exp">
+                    <h2 class="subname">Experience</h2>
+                        <div class="snamfil">
+                            <h3 class="elemttl">Engineering Intern :: Dialog Semiconductors</h3>
+                            <p>July 2019 - August 2019 & December 2019 - January 2020</p>
+                            <!-- <i class="fas fa-circle-o" aria-hidden="true" style="color:black;font-size:10px;padding-left:10px;"></i> -->
+                        </div>  
+                    <br>
+                </div>
+            </div>
+        </section>
+        <section class = "module parallax parallax-3" id="PP">
+            <div class = "contexts">
+                <div class = "PP">
+                    <h2 class="subname" >Personal Projects</h2>
+                    <div class="snamfil">
+                        <button class = "project" id="MriBtn"> MRI Cleaner </button>
+                        <button class = "project" id="CmpBtn"> Compression </button>
+                        <button class = "project" id="SACBtn"> Stock Analysis CLI </button>
+                        <button class = "project" id="LMLBtn"> Learning ML </button>
+                    </div>  
+                </div>
+                <br>
+            </div>
+
+        </section>
+        <section class = "module parallax parallax-5" id="skills">
             <div class = "contexts">
                 <div class = "skills">
                     <h2 class="subname">Skills</h2>
@@ -159,10 +164,87 @@
                     </div>   
                 </div>
             </div>
+        </section>
+        <div class = "modal" id = "MriMod">
+            <div class = "modal-content">
+                <div class ="modal-header">
+                    <span class = "close">&times</span>
+                    <br>
+                    <p>text</p>
+                </div>
+                <div class ="modal-body">
+                    <p>text</p>
+                </div>
+                <div class ="modal-footer">
+                    <p>text</p>
+                </div>
+            </div>
+        </div>
+        <div class = "modal" id = "CmpMod">
+            <div class = "modal-content">
+                <div class ="modal-header">
+                    <span class = "close">&times</span>
+                    <br>
+                    <p>text</p>
+                </div>
+                <div class ="modal-body">
+                    <p>text</p>
+                </div>
+                <div class ="modal-footer">
+                    <p>text</p>
+                </div>
+            </div>
+        </div>
+        <div class = "modal" id = "SACMod">
+            <div class = "modal-content">
+                <div class ="modal-header">
+                    <span class = "close">&times</span>
+                    <br>
+                    <p>text</p>
+                </div>
+                <div class ="modal-body">
+                    <p>text</p>
+                </div>
+                <div class ="modal-footer">
+                    <p>text</p>
+                </div>
+            </div>
+        </div>
+        <div class = "modal" id = "LMLMod">
+            <div class = "modal-content">
+                <div class ="modal-header">
+                    <span class = "close">&times</span>
+                    <br>
+                    <p>text</p>
+                </div>
+                <div class ="modal-body">
+                    <p>text</p>
+                </div>
+                <div class ="modal-footer">
+                    <p>text</p>
+                </div>
+            </div>
         </div>
         <!-- <div class = "module parallax parallax-5" id="skills"> -->
-        <h2 id = "bottom"></h2>
+        <section id = "bottom"></section>
         <!-- </div> -->
     </div>
+    <!-- <div class = "modal" id = "LMLMod"> -->
+        <!-- format -->
+        <!-- <div class = "modal-content">
+            <div class ="modal-header">
+                <span class = "close">&times</span>
+                <br>
+                <p>text</p>
+            </div>
+            <div class ="modal-content">
+                <p>text</p>
+            </div>
+            <div class ="modal-footer">
+                <p>text</p>
+            </div>
+        </div>
+    </div> -->
+
 </body>
 </html>

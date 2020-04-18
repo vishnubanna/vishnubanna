@@ -1,5 +1,5 @@
 $barwid: 250px;
-//$barwid: 300px;
+$leftoff: 50px;
 
 // html {
 //     //scroll-behavior: smooth;
@@ -12,9 +12,10 @@ $barwid: 250px;
 
 body {
     background-color: rgba(0, 0, 0, 1);
+    //background-image: url("https://vishnubanna.github.io/src/purdue.jpeg");
     margin-left: 0;
     margin-top: 0;
-    overflow-x: hidden;
+    //overflow-y: hidden;
 }
 
 .sidebar {
@@ -73,11 +74,7 @@ body {
     border: solid;
 }
 
-.content{
-    font-family: 'Saira', sans-serif;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
+
 
 .active{
     transform: scale(1.4);
@@ -150,27 +147,35 @@ body {
     
 }
 
-.education{
-    background-image: url("file:///Users/vishnubanna/CodingProjects/vishnubanna.github.io/src/purdue.jpeg");
-    height: 100%;
-    //file:///Users/vishnubanna/CodingProjects/vishnubanna.github.io/src/purdue.jpeg
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
-    overflow-y: hidden;
+.content{
+    font-family: 'Saira', sans-serif;
+    
+    //overflow-y: hidden;
+    // overflow-y: scroll;
+    // overflow-x: hidden;
+    overflow: scroll;
+
+    //scroll-behavior: auto;
+    scroll-snap-type: both mandatory;
+    -webkit-scroll-snap-type: mandatory;
+    //display: flex;
+    //flex-direction: column;
+}
+
+.content section{
+    scroll-snap-align: start;
+    -webkit-scroll-snap-align: start;
+    //scroll-snap-type: both mandatory;
+    //scroll-snap-type: mandatory;
 }
 
 
 
-div.module.parallax{
-    height: 100%;
+section.module.parallax{
+    height: 100vh;//900px;//100%;
     //file:///Users/vishnubanna/CodingProjects/vishnubanna.github.io/src/purdue.jpeg
     width: 100%;
     //background-repeat: no-repeat;
-    
     overflow-x: hidden;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -179,43 +184,114 @@ div.module.parallax{
 }
 
 
-div.module.parallax-1{
-    background-image: url("https://vishnubanna.github.io/src/purdue2.jpeg");
+section.module.parallax-4{
+    background-image: url("https://vishnubanna.github.io/src/purdue.jpeg");
 }
 
-div.module.parallax-2{
+section.module.parallax-1{
+    background-image: url("https://vishnubanna.github.io/src/purdue.jpeg");
+}
+
+section.module.parallax-2{
     background-image: url("https://vishnubanna.github.io/src/city.jpeg");
 }
 
-div.module.parallax-3{
+section.module.parallax-3{
     background-image: url("https://vishnubanna.github.io/src/exp.jpeg");
 }
 
-div.module.parallax-4{
-    background-image: url("https://vishnubanna.github.io/src/mountain3.jpeg");
-}
-
-
-div.module.parallax-5{
-    background-image: url("https://vishnubanna.github.io/src/city3.jpeg");
+section.module.parallax-5{
+    background-image: url("https://vishnubanna.github.io/src/city2.jpeg");
 }
 //file:///Users/vishnubanna/CodingProjects/vishnubanna.github.io/
 
-// .expcont{
-//     margin-top: 25%;
-//     background-color: white;
-//     height: 50%;
-//     padding-left: $barwid + 20px;
-//     width: 100%;
-// }
 
 .contexts{
-    margin-top: 25%;
-    background-color: white;
+    margin-top: 20%;
+    background-color: rgba(256,256,256,1);
+    //background-color: rgba(0,0,0,0.75);
     width: 100%;
-    min-height: 50%;
-    //z-index: 100;
+    min-height: 60%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    //display: table;
+    //scroll-snap-align: start;
 }
+
+
+
+
+.modal{
+    display: none;
+    background-color:rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1000;
+}
+
+.modal-content{
+    width: 60%;
+    margin: 15% auto;
+    background-color: rgba(230, 230, 230, 0.822);
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.9s;
+}
+
+.modal-body{
+    padding-left: 10px;
+}
+
+.modal-footer{
+    padding-left: 10px;
+}
+
+.modal-header{
+    padding-left: 10px;
+}
+
+.close{
+    color: rgb(230, 230, 230);
+    float: right;
+    //top: 25px;
+    //position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+// #MriMod{
+//     display: none;
+// }
+
+// #MriMod{
+//     display: none;
+// }
+
+// #MriMod{
+//     display: none;
+// }
+
+// #MriMod{
+//     display: none;
+// }
+
+// #MriMod{
+//     display: none;
+// }
+
 
 @media screen and (min-width: 900px){
     
@@ -237,12 +313,47 @@ div.module.parallax-5{
 
     .contexts{
         padding-left: $barwid + 20px;
-        margin-right: -100px;
+        //margin-left: $barwid - 15px;//+ 20px;
     }
 
     .content{
         float: none;
         //padding-left: $barwid + 20px;
+    }
+
+    .edu{
+        margin-right: $barwid+$leftoff+0px;
+        vertical-align: middle;
+        //display: table-cell;
+        //color: white;
+    }
+    
+    .exp{
+        margin-right: $barwid+$leftoff+0px;
+        vertical-align: middle;
+        //display: table-cell;
+        //color: white;
+    }
+    
+    .PP{
+        margin-right: $barwid+$leftoff+0px;
+        vertical-align: middle;
+        //display: table-cell;
+        //color: white;
+    }
+    
+    .EC{
+        margin-right: $barwid+$leftoff+0px;
+        vertical-align: middle;
+        //display: table-cell;
+        //color: white;
+    }
+    
+    .skills{
+        margin-right: $barwid+$leftoff+0px;
+        vertical-align: middle;
+        //display: table-cell;
+        //color: white;
     }
 }
 
@@ -277,3 +388,7 @@ div.module.parallax-5{
 //compile me :: sass scss/styles.scss:styles/styles.css
 
 
+@keyframes animatetop{
+    from {top:-900px; opacity: 0}
+    to {top:0; opacity: 1}
+}
